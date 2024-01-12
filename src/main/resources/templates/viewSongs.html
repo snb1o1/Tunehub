@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Insert title here</title>
+		<link rel="stylesheet" th:href="@{/css/viewSongs.css}">
+		<style type="text/css">
+			iframe{
+			height:100px;
+			width:500px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Play Your songs</h1>
+		<table border="1">
+			<tr>
+				<th>Artist</th>
+				<th>Name</th>
+				<th>Genre</th>
+				<th>Play</th>
+			</tr>
+			<tr th:each="songs : ${songs}">
+				<td th:text="${songs.artist}"></td>
+				<td th:text="${songs.name}"></td>
+				<td th:text="${songs.genre}"></td>
+				<td class="audio-container">
+				    <audio controls>
+				        <source th:src="${songs.link}" type="audio/mpeg">
+				    </audio>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

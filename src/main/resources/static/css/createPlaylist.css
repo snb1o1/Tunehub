@@ -1,0 +1,95 @@
+/* createPlaylist.css */
+
+/* Base Styles for createPlaylist.html */
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffb6c1, #87cefa);
+    color: #fff;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Form Styles for createPlaylist.html */
+form {
+    background: linear-gradient(135deg, aquamarine, MediumTurquoise, SkyBlue, PaleTurquoise, Linen, LightBlue);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px; /* Adjust the top margin */
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: aquamarine; /* Set the desired color */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Checkbox and label styles */
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.checkbox-item {
+    width: 48%; /* Adjust the width as needed */
+    margin-bottom: 16px;
+}
+
+.checkbox-item label {
+    display: inline-block;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Button Styles for createPlaylist.html */
+input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Design for createPlaylist.html */
+@media screen and (max-width: 900px) {
+    form {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}

@@ -1,0 +1,96 @@
+/* admin-home-style.css */
+
+/* Base Styles for adminHome.html */
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffb6c1, #87cefa);
+    color: #fff;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    min-height: 100vh;
+}
+
+/* Header Styles for adminHome.html */
+header {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 3em;
+    letter-spacing: 3px;
+    color:aquamarine;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 0;
+}
+
+/* Navigation Styles for adminHome.html */
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center items vertically */
+    margin-top: 20px;
+    z-index: 3;
+    width: 100%;
+}
+
+nav a {
+    background: linear-gradient(45deg, #e67e22, #d35400);
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 10px 0;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #FFD700;
+}
+
+/* Main Content Styles for adminHome.html */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    width: 100%;
+}
+
+
+
+/* Responsive Design for adminHome.html */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+}

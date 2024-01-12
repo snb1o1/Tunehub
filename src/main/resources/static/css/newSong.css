@@ -1,0 +1,68 @@
+/* newSong.css */
+
+/* Base Styles for newSong.html */
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffb6c1, #87cefa);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Form Styles for newSong.html */
+form {
+    background: linear-gradient(135deg, aquamarine, MediumTurquoise, SkyBlue, PaleTurquoise, Linen, LightBlue);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 2em;
+    margin-top: 0; /* Remove default top margin for h1 */
+    color: aquamarine;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button Styles for newSong.html */
+input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Design for newSong.html */
+@media screen and (max-width: 900px) {
+    form {
+        width: 90%;
+        margin-top: 20px;
+    }
+}

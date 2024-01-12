@@ -1,0 +1,64 @@
+/* displayPlaylist.css */
+
+/* Base Styles for displayPlaylist.html */
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffb6c1, #87cefa);
+    color: #fff;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column; /* Added flex-direction to arrange items vertically */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header Styles for displayPlaylist.html */
+h1 {
+    font-size: 2.5em;
+    margin: 0; /* Adjusted margin to set it to zero */
+    color: aquamarine; /* Set the desired color */
+}
+
+/* Table Styles for displayPlaylist.html */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #fff;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* List Styles for displayPlaylist.html */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Audio Styles for displayPlaylist.html */
+audio {
+    margin-top: 5px;
+}
+
+/* Responsive Design for displayPlaylist.html */
+@media screen and (max-width: 900px) {
+    table {
+        width: 90%;
+    }
+}

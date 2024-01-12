@@ -1,0 +1,74 @@
+/* login-style.css */
+
+/* Base Styles for login.html */
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffb6c1, #87cefa);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Main Content Styles for login.html */
+h1 {
+    background: linear-gradient(135deg, aquamarine, MediumTurquoise, SkyBlue, PaleTurquoise, Linen, LightBlue);
+    color: LavenderBlush;
+    font-size: 3em;
+    margin-top: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+form {
+    background: linear-gradient(135deg, aquamarine, MediumTurquoise, SkyBlue, PaleTurquoise, Linen, LightBlue);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    width: 300px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the form horizontally */
+    margin-top: 100px; /* Adjust the top margin as needed */
+    text-align: center; /* Center text within the form */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Design for login.html */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    form {
+        width: 80%;
+        margin-top: 20px; /* Adjust the top margin for smaller screens */
+    }
+}

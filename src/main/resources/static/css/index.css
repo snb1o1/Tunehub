@@ -1,0 +1,108 @@
+/* index-style.css */
+
+/* Base Styles for index.html */
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffb6c1, #87cefa); /* Gradient with light pink and sky blue tones */
+    color: #2a2a2a; /* Dark gray text color */
+    overflow-x: hidden;
+}
+
+/* Header Styles for index.html */
+header {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    backdrop-filter: blur(8px);
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+    letter-spacing: 3px;
+    color: #ff9933;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+}
+
+/* Main Content Styles for index.html */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px;
+}
+
+h1 {
+	color:aquamarine;
+    font-size: 3.5em;
+    margin-top: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Button Styles for index.html */
+.login-button,
+.register-button {
+    display: inline-block;
+    padding: 18px 40px;
+    margin: 20px;
+    font-size: 1.4em;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-button {
+    background: linear-gradient(45deg, #ffd700, #ffa500); /* Gradient with gold and orange tones */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.register-button {
+    background: linear-gradient(45deg, #20b2aa, #ffc0cb); /* Gradient with light sea green and pink tones */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-button:hover,
+.register-button:hover {
+    transform: scale(1.1);
+}
+
+.login-button:active,
+.register-button:active {
+    transform: scale(0.95);
+}
+
+/* Responsive Design for index.html */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 2.5em;
+    }
+
+    main {
+        padding-top: 100px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .login-button,
+    .register-button {
+        padding: 15px 30px;
+        font-size: 1.2em;
+    }
+}
